@@ -1,8 +1,82 @@
 @import "tailwindcss";
 
 @theme {
-    --color-p1: "#2EF2FF",
-    --color-p2: "#3C52D9",
-    --color-p3: "#C8EA80",
+  /* 🎨 Colors */
+  --color-p1: #2ef2ff;
+  --color-p2: #3c52d9;
+  --color-p3: #c8ea80;
+  --color-p4: #eaedff;
+  --color-p5: #c4cbf5;
+  --color-s1: #080d27;
+  --color-s2: #0c1838;
+  --color-s3: #334679;
+  --color-s4: #1959ad;
+  --color-s5: #263466;
+  --color-black: #000000;
+  --color-black-100: #05091d;
 
+  /* Shadow */
+  --shadow-100:
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 6px #1959ad;
+  --shadow-200:
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 10px #3391ff;
+  --shadow-300:
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 6px #1959ad;
+  --shadow-400: inset 0px 2px 4px 0 rgba(255, 255, 255, 0.05);
+  --shadow-500:
+    0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7);
+
+  /* 🔠 Font family */
+  --font-inter: Inter, sans-serif;
+  --font-poppins: Poppins, sans-serif;
+
+  /* 📏 Spacing */
+  --spacing-1/5: 20%;
+  --spacing-2/5: 40%;
+  --spacing-3/5: 60%;
+  --spacing-4/5: 80%;
+  --spacing-3/20: 15%;
+  --spacing-7/20: 35%;
+  --spacing-9/20: 45%;
+  --spacing-11/20: 55%;
+  --spacing-13/20: 65%;
+  --spacing-15/20: 75%;
+  --spacing-17/20: 85%;
+  --spacing-19/20: 95%;
+  --spacing-22: 88px;
+  --spacing-100: 100px;
+  --spacing-330: 330px;
+  --spacing-388: 388px;
+  --spacing-400: 400px;
+  --spacing-440: 440px;
+  --spacing-512: 512px;
+  --spacing-640: 640px;
+  --spacing-960: 960px;
+  --spacing-1230: 1230px;
+
+  /* 📐 Z-index */
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 4;
+
+  /* 📏 Line height */
+  --line-height-12: 45px;
+
+  /* ⭕ Border radius */
+  --radius-14: 14px;
+  --radius-20: 20px;
+  --radius-40: 40px;
+  --radius-half: 50%;
+  --radius-7xl: 40px;
+
+  /* 📦 Flex basis / grow */
+  --felex-50: 0 0 50%;
+  --flex-320: 1px 0 320px;
+  --flex-540: 0 0 540px;
+  --flex-280: 0 0 280px;
+  --flex-256: 0 0 256px;
+  --flex-100: 0 0 100%;
 }
