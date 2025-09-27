@@ -1,5 +1,11 @@
+import Header from "./sections/Header";
+
 const App = () => {
-  return <div className="text-3xl text-center">Hello, World!</div>;
+  return (
+    <main className="overflow-hidden">
+      <Header />
+    </main>
+  );
 };
 
 export default App;
