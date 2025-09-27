@@ -16,7 +16,7 @@ const Button = ({ icon, children, href, containerClassName, onClick, markerFill 
                 )}
                 <span className="relative z-2 font-poppins base-bold text-p1 uppercase">{children}</span>
             </span>
-            {/* <span className="glow"></span> */}
+            <span className="glow-before glow-after" />
         </>
     )
     return href ? (
