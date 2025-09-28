@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
 
 const NavLink = ({ title }) => (
@@ -9,8 +9,18 @@ const NavLink = ({ title }) => (
 );
 
 const Header = () => {
+  const [hasScrolled, setHasScroller] = useState(false);
   const [isOpen, setIsOpen] = useState(false)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScroller(window.scrollY > 32 ? true : false);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [])
 
 
   return (
