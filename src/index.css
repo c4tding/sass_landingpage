@@ -91,12 +91,86 @@
   --radius-7xl: 40px;
 
   /* 📦 Flex basis / grow */
-  --felex-50: 0 0 50%;
-  --flex-320: 1px 0 320px;
+  --flex-50: 0 0 50%;
+  --flex-320: 1 0 320px;
   --flex-540: 0 0 540px;
   --flex-280: 0 0 280px;
   --flex-256: 0 0 256px;
   --flex-100: 0 0 100%;
+
+  /* 🔠 Typographi */
+  /* Headings */
+  --text-h-num: 72px;
+  --font-weight-h-num: 700;
+  --leading-h-num: 84px;
+
+  --text-h1: 84px;
+  --font-weight-h1: 900;
+  --leading-h1: 84px;
+  --tracking-h1: -0.03em;
+
+  --text-h2: 64px;
+  --font-weight-h2: 900;
+  --leading-h2: 64px;
+
+  --text-h3: 48px;
+  --font-weight-h3: 600;
+  --leading-h3: 56px;
+  --tracking-h3: -0.02em;
+
+  --text-h4: 40px;
+  --font-weight-h4: 600;
+  --leading-h4: 52px;
+
+  --text-h5: 32px;
+  --font-weight-h5: 600;
+  --leading-h5: 40px;
+
+  --text-h6: 24px;
+  --font-weight-h6: 500;
+  --leading-h6: 36px;
+
+  /* Body */
+  --text-body-1: 22px;
+  --leading-body-1: 36px;
+
+  --text-body-2: 18px;
+  --font-weight-body-2: 600;
+  --leading-body-2: 32px;
+
+  --text-body-3: 16px;
+  --leading-body-3: 28px;
+  --tracking-body-3: 0.02em;
+
+  --text-base: 16px;
+  --font-weight-base: 500;
+  --leading-base: 24px;
+  --tracking-base: 0.03em;
+
+  --text-base-bold: 16px;
+  --font-weight-base-bold: 700;
+  --leading-base-bold: 24px;
+
+  --text-base-small: 14px;
+  --font-weight-base-small: 600;
+  --leading-base-small: 18px;
+  --tracking-base-small: 0.03em;
+
+  /* Small */
+  --text-small-1: 14px;
+  --font-weight-small-1: 600;
+  --leading-small-1: 18px;
+  --tracking-small-1: 0.03em;
+
+  --text-small-2: 12px;
+  --font-weight-small-2: 700;
+  --leading-small-2: 16px;
+  --tracking-small-2: 0.3em;
+
+  --text-small-compact: 12px;
+  --font-weight-small-compact: 600;
+  --leading-small-compact: 18px;
+  --tracking-small-compact: 0.03em;
 }
 
 @layer base {
@@ -222,18 +296,15 @@
   }
   /* END of Gradients */
   /* START of Common */
-
   .container {
     @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
   }
   .caption {
     @apply text-[12px] font-bold leading-[16px] tracking-[0.3em] uppercase text-p3;
   }
-
   .scroll-hide::-webkit-scrollbar {
     display: none;
   }
-
   .scroll-hide {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
