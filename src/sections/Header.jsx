@@ -13,19 +13,33 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
+    if (typeof window === "undefined") return; //  ✅ aman untuk SSR
+    let ticking = false // ✅ flag untuk mencegah rAF dipanggil berkali2
     const handleScroll = () => {
-      setHasScroller(window.scrollY > 32 ? true : false);
+      setHasScroller(window.scrollY > 32);  // ✅ update state
+      ticking = false // reset flag setelah rAF jalan
     }
-    window.addEventListener("scroll", handleScroll);
+
+    const onScroll = () => { // ✅ hanya schedule sekali per frame
+      if (!ticking) {
+        window.requestAnimationFrame(handleScroll)
+        ticking = true
+      }
+    }
+
+    handleScroll() // ✅ cek posisi awal saat mount
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", onScroll);
     }
   }, [])
 
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-50  w-full py-10">
+      <header className={clsx("fixed top-0 left-0 z-50  w-full py-10", hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px] transition-all duration-500 ")}>
         <div className="container flex h-14 items-center max-lg:px-5">
           <a href="#" className="lg:hidden flex-1 cursor-pointer z-2">
             <img src="/images/xora.svg" alt="Logo" width={115} height={55} />
