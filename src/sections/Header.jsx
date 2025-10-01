@@ -32,11 +32,11 @@ const Header = () => {
     }
   }, [])
 
-  const NavLink = ({ title }) => (
+  const NavLink = ({ title, offset }) => (
     <LinkScroll
       onClick={() => setIsOpen(false)}
       to={title}
-      offset={-150}
+      offset={offset || -140}
       spy
       smooth
       activeClass="nav-active"
@@ -66,7 +66,7 @@ const Header = () => {
                   <li className="nav-li">
                     <NavLink title="features" />
                     <div className="dot" />
-                    <NavLink title="pricing" />
+                    <NavLink title="pricing" offset={-50} />
                   </li>
                   <li className="nav-logo">
                     <LinkScroll
