@@ -20,7 +20,7 @@ const FaqItem = ({ item, index }) => {
                         {index}
                     </div>
                     <div className={clsx("text-h6 font-h6 leading-h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center", active && "max-lg:text-p1")}>
-                        {item}
+                        {item.question}
                     </div>
                 </div>
 
