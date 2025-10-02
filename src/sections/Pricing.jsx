@@ -7,7 +7,6 @@ import Button from '../components/Button';
 import { plans } from '../constants';
 const Pricing = () => {
     const [monthly, setMonthly] = useState(false)
-    console.log(!monthly);
 
     return (
         <section>
