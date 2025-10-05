@@ -15,7 +15,9 @@ const Faq = () => {
                     </div>
 
                     <div className='faq-line_after w-0.5 h-full absolute left-[calc(50%-1px)] top-0 -z-1 bg-s2' />
+
                 </div>
+
                 <div className='faq-glow_before relative z-2 border-2 border-s2 bg-s1'>
                     <div className="container flex gap-10 max-lg:block">
                         <div className="rounded-half absolute -top-10 left-[calc(50%-39.9px)] z-4 flex size-20 items-center justify-center border-2 border-s2 bg-s1">
@@ -23,10 +25,16 @@ const Faq = () => {
                         </div>
                         <div className="relative flex-1 pt-24">
                             {faq.slice(0, halfLength).map((item, index) => (
-                                <FaqItem key={item.id} item={item} index={index} />
+                                <FaqItem key={item.id} item={item} index={index + 1} />
+                            ))}
+                        </div>
+                        <div className="relative flex-1 pt-24 lg:pt-24">
+                            {faq.slice(halfLength).map((item, index) => (
+                                <FaqItem key={item.id} item={item} index={halfLength + index + 1} />
                             ))}
                         </div>
                     </div>
+                    <div className="faq-line_after w-0.5 h-full absolute left-[calc(50%-1px)] top-0 bottom-0 -z-1 bg-s2 max-lg:hidden" />
                 </div>
             </Element>
         </section>
