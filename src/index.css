@@ -92,6 +92,7 @@
 
   /* 📦 Flex basis / grow */
   --flex-50: 0 0 50%;
+  --flex-300: 0 0 300px;
   --flex-320: 1 0 320px;
   --flex-540: 0 0 540px;
   --flex-280: 0 0 280px;
