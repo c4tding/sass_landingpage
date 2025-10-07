@@ -35,5 +35,8 @@
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.1.12"
+  },
+  "engines": {
+    "node": "22.18.0"
   }
 }
