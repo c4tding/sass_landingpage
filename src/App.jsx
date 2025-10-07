@@ -1,3 +1,4 @@
+import Download from './sections/Download';
 import Faq from "./sections/Faq";
 import Feature from "./sections/Feature";
 import Header from "./sections/Header";
@@ -14,6 +15,7 @@ const App = () => {
       <Pricing />
       <Faq />
       <Testimonial />
+      <Download />
     </main>
   );
 };
