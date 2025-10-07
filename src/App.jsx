@@ -1,6 +1,7 @@
 import Download from './sections/Download';
 import Faq from "./sections/Faq";
 import Feature from "./sections/Feature";
+import Footer from './sections/Footer';
 import Header from "./sections/Header";
 import Hero from './sections/Hero';
 import Pricing from './sections/Pricing';
@@ -16,6 +17,7 @@ const App = () => {
       <Faq />
       <Testimonial />
       <Download />
+      <Footer />
     </main>
   );
 };
