@@ -82,7 +82,7 @@ const Header = () => {
                   <li className="nav-li">
                     <NavLink title="faq" offset={-30} />
                     <div className="dot" />
-                    <NavLink title="Download" />
+                    <NavLink title="download" />
                   </li>
                 </ul>
               </nav>
