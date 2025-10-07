@@ -90,15 +90,6 @@
   --radius-half: 50%;
   --radius-7xl: 40px;
 
-  /* 📦 Flex basis / grow */
-  --flex-50: 0 0 50%;
-  --flex-300: 0 0 300px;
-  --flex-320: 1 0 320px;
-  --flex-540: 0 0 540px;
-  --flex-280: 0 0 280px;
-  --flex-256: 0 0 256px;
-  --flex-100: 0 0 100%;
-
   /* 🔠 Typographi */
   /* Headings */
   --text-h-num: 72px;
@@ -200,6 +191,30 @@
 }
 
 @layer utilities {
+  /* 📦 START Flex basis / grow */
+  .flex-50 {
+    flex: 0 0 50%;
+  }
+  .flex-256 {
+    flex: 0 0 256px;
+  }
+  .flex-280 {
+    flex: 0 0 280px;
+  }
+  .flex-300 {
+    flex: 0 0 320px;
+  }
+  .flex-320 {
+    flex: 1 0 320px;
+  }
+  .flex-540 {
+    flex: 0 0 540px;
+  }
+  .flex-100 {
+    flex: 0 0 100%;
+  }
+  /* 📦 END Flex basis / grow */
+
   /* START of Typography */
   .h-num {
     @apply font-inter text-[72px] font-bold leading-[84px];
